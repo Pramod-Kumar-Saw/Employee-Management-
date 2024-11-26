@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        /* Animated background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundAnimation 10s infinite alternate;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: #ff9a9e; }
+            25% { background: #fad0c4; }
+            50% { background: #fbc2eb; }
+            75% { background: #a1c4fd; }
+            100% { background: #c2e9fb; }
+        }
+
+        /* Welcome container */
+        .welcome-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: scaleIn 1s ease;
+        }
+
+        @keyframes scaleIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .button.add {
+            background: #6a11cb;
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+        }
+
+        .button.add:hover {
+            background: #2575fc;
+        }
+
+        .button.display {
+            background: #ff512f;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+        }
+
+        .button.display:hover {
+            background: #dd2476;
+        }
+        .one{
+        padding: 10px;
+    border-radius: 5px;
+    /* background-color: coral; */
+    background: #ff512f;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top:10px;
+        }
+        .one:hover {
+            background: #dd2476;
+        }
+        .two{
+        display:flex;
+        justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Our Page</h1>
+        <div class="two">
+        <a href="Resister.html" class="button add">Add</a>
+        <form action="dis">
+        <input class="one" type="submit" value="Display">
+    </form>
+    </div>
+    </div>
+</body>
+</html>
